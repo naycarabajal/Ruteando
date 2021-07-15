@@ -12,6 +12,10 @@
   padding-top: 15vh;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
 .bannerNaranja p {
   font-weight: 400;
   opacity: 1;
