@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+.bannerNaranja {
+  text-align: center;
+  font-weight: 400;
+  background-image: url("../media/banner.jpeg");
+  height: 25rem;
+  background-size: cover;
+  vertical-align: center;
+  padding-top: 0.5vh;
+  margin-top: 0.5vh;
+  padding-top: 15vh;
+}
+
+.bannerNaranja p {
+  font-weight: 400;
+  opacity: 1;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name: foco;
+}
+
+.bannerCeleste {
+  text-align: center;
+  font-weight: 400;
+  background-image: url("../media/banner3.jpeg");
+  height: 25rem;
+  background-size: cover;
+  vertical-align: center;
+  padding-top: 0.5vh;
+  margin-top: 0.5vh;
+  padding-top: 15vh;
+}
+
+.bannerCeleste p {
+  font-weight: 400;
+  opacity: 1;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name: foco;
+}
+
+.siteFooter {
+  background-image: url(../media/bannerPie.jpeg);
+  margin-top: 2rem;
+}
+
+.siteFooter .siteFooter__linksFotter {
+  text-decoration: none;
+  transition: 3s;
+}
+
+/*
+#piePagina{  
+	color: #49654C;
+	font-size: 300;
+	height: 10rem;
+	text-align: center;
+	text-orientation: center ;
+	padding-top: 10vh;
+	grid-area:  footer;
+	background-image: url(../media/bannerPie.jpeg); #eec971;
+	margin-top: 2vh;
+	color: #49654C;
+	a{
+	text-decoration:  none;
+	padding: 10vw 10vw 0vw 10vw;
+	transition: 3s;
+	}
+}*/
+img .miLogo {
+  margin-right: 50px;
+  display: block;
+}
+
+.bg-bodyHome {
+  background-color: #fefefe;
+}
+
+.bannerNaranja {
+  text-align: center;
+  font-weight: 400;
+  background-image: url("../media/banner.jpeg");
+  height: 25rem;
+  background-size: cover;
+  vertical-align: center;
+  padding-top: 0.5vh;
+  margin-top: 0.5vh;
+  padding-top: 15vh;
+}
+
+.bannerNaranja p {
+  font-weight: 400;
+  opacity: 1;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name: foco;
+}
+
+.bannerCeleste {
+  text-align: center;
+  font-weight: 400;
+  background-image: url("../media/banner3.jpeg");
+  height: 25rem;
+  background-size: cover;
+  vertical-align: center;
+  padding-top: 0.5vh;
+  margin-top: 0.5vh;
+  padding-top: 15vh;
+}
+
+.bannerCeleste p {
+  font-weight: 400;
+  opacity: 1;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name: foco;
+}
+
+form {
+  margin: 4rem;
+}
+
+form fieldset {
+  font-weight: 100;
+  margin: 5rem 1rem;
+}
+
+.camposInputs {
+  padding: 1rem;
+  margin: 3rem;
+  width: 15rem;
+  height: 2rem;
+}
+
+.textArea {
+  width: 50rem;
+  height: 15rem;
+}
+
+.volverFormulario {
+  height: 20rem;
+}
+
+.volverFormulario a {
+  text-decoration: none;
+  margin-left: 10rem;
+  padding: 2rem;
+}
+
+.buttonForm {
+  border: none;
+  text-decoration: none;
+  background: linear-gradient(to top, #efcd86, white);
+  color: #49654C;
+  padding: 1rem;
+  margin-left: 25rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  width: 6rem;
+  height: 3rem;
+}
+
+/*contiene todo lo referido al banner, texto introducido en el banner y texto introductorio*/
+/*
+.carouselPersonal{ se suma para practica de BEM
+	background-color: #f7dfb6;
+	.carouselPersonal__imagenBorde{
+		border:solid;
+	}
+}*/
+.titulo {
+  color: #66921b;
+  font-weight: 400;
+}
+
+.subtitulo {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #e3bf62;
+}
+
+/* se reemplaza en mixin
+.bannerInicio{
+	text-align: center ;
+	font-weight: 400;
+	
+	background-image: url(../media/banner.jpeg);
+	height: 25rem;
+	background-size: cover;
+	vertical-align: center;
+	padding-top:0.5vh;
+	margin-top: 0.5vh;
+	padding-top: 15vh;
+	grid-area: int;
+	p{
+	font-weight: 400;
+	opacity:1;
+	font-size: 1.5rem;
+	animation-duration: 3s;
+	animation-name: foco;
+	}
+}*/
+.introductoryText {
+  padding: 2rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+/* Inicio flotar elemento */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+  padding: 32px 64px;
+  margin: auto;
+}
+
+.social {
+  width: 48px;
+  position: fixed;
+  top: 35rem;
+  left: 85rem;
+}
+
+/* Fin flotar elemento */
+p {
+  color: #404D49;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+a {
+  color: #6E7175;
+}
+
+a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  width: 100px;
+}
+
+.fotoMedium {
+  width: 55vh;
+}
+
+.fotoPequenia {
+  width: 45vh;
+}
+
+.fotoGrande {
+  width: 75vh;
+}
+
+ul li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+iframe {
+  padding-left: 2rem;
+}
+
+@keyframes foco {
+  0% {
+    font-size: 1rem;
+  }
+  50% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes titilar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.textoColumn {
+  grid-area: txtCuerpo;
+}
+
+.textoColumn div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  animation-name: titilar;
+  animation-duration: 3s;
+}
+
+.textoColumn .subtitulos {
+  font-weight: 300;
+  margin: 4rem;
+  font-size: 1.5rem;
+  color: #e3bf62;
+}
+
+.textoColumn .subtitulos .items {
+  margin: 2rem;
+  font-size: 1rem;
+  color: #635D58;
+  padding-left: 2rem;
+}
+
+.textoColumn .subtitulos .items li {
+  list-style-position: inside;
+  list-style-type: all;
+}
+
+/* Inicio de utilización de flex en Comunidad*/
+.padreContenidoComunidadFlex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+.hijoContenidoComunidadFlex {
+  padding: 1rem;
+  align-content: stretch;
+  margin: 1.5rem;
+  flex: 1;
+  /*utilizo flex para unificaar flex-grow, shrink y basis*/
+}
+
+.hijoContenidoComunidadFlex a {
+  font-size: 300;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+}
+
+.hijoContenidoComunidadFlex img {
+  display: block;
+  margin: auto;
+}
+
+.hijoContenidoComunidadFlex:hover {
+  padding: 1rem;
+  align-content: stretch;
+  margin: 1rem;
+  flex: 1;
+  /*utilizo flex para unificaar flex-grow, shrink y basis*/
+  transform: scale(1.1);
+  background-color: #efcd86;
+}
+
+/* Fin de utilización de flex en Comunidad*/
+/*media query para boostrap*/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .container-fluid .row {
+    background-color: white;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .container-fluid .row {
+    background-color: #ccc;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .container-fluid .row {
+    background-color: white;
+  }
+}

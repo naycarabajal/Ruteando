@@ -1,0 +1,48 @@
+/*contiene todo lo referido al banner, texto introducido en el banner y texto introductorio*/
+
+/*
+.carouselPersonal{ se suma para practica de BEM
+	background-color: #f7dfb6;
+	.carouselPersonal__imagenBorde{
+		border:solid;
+	}
+}*/
+
+$colorNarajaLetras: #e3bf62;
+
+.titulo{
+	color:#66921b;
+	 font-weight: 400;
+}
+
+.subtitulo{
+	font-weight:400;
+	font-size:1.5rem;
+	color:#e3bf62;
+}
+
+/* se reemplaza en mixin
+.bannerInicio{
+	text-align: center ;
+	font-weight: 400;
+	
+	background-image: url(../media/banner.jpeg);
+	height: 25rem;
+	background-size: cover;
+	vertical-align: center;
+	padding-top:0.5vh;
+	margin-top: 0.5vh;
+	padding-top: 15vh;
+	grid-area: int;
+	p{
+	font-weight: 400;
+	opacity:1;
+	font-size: 1.5rem;
+	animation-duration: 3s;
+	animation-name: foco;
+	}
+}*/
+
+.introductoryText{
+	padding: 2rem;	
+}

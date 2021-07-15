@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import "mixin";
+@import "footer";
+@import "header";
+@import "form";
+@import "introPage";
+
+$colorNarajaLetras: #e3bf62;
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+
+/* Inicio flotar elemento */
+
+*{box-sizing:border-box;}
+
+		.container{
+			width:95%;
+			max-width:900px;
+			padding:32px 64px;
+			margin:auto;
+		}
+
+		.social{
+			width:48px;
+			position:fixed;
+			top:35rem;
+			left: 85rem;
+		}
+
+/* Fin flotar elemento */
+
+p{
+	color: #404D49;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	word-spacing:3px;
+	margin: 1rem 1rem 1rem 1rem;
+}
+
+a{
+	color: #6E7175;
+}
+
+a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+img{
+	width:100px
+}
+
+.fotoMedium{
+	@include sizeImag(mediana);
+}
+
+.fotoPequenia{
+	@include sizeImag(pequenia);
+}
+
+.fotoGrande{
+	@include sizeImag(grande);
+}
+
+ul li{
+ list-style-position: inside;
+ list-style-type: none; 
+}
+
+iframe{
+	padding-left: 2rem;
+}
+
+
+@keyframes foco{
+	0%{
+		font-size: 1rem;
+	}
+	50%{
+		font-size: 2rem;
+	}
+	100%{
+		font-size: 1.5rem;
+	}
+}
+
+
+@keyframes titilar{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+.textoColumn{
+	grid-area: txtCuerpo;
+	div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem;
+	align-items: center;
+	animation-name: titilar;
+	animation-duration: 3s;
+	}
+	.subtitulos{
+		font-weight:300;
+		margin: 4rem;
+		font-size:1.5rem;
+		color:#e3bf62;
+		.items{
+			margin: 2rem;
+			font-size:1rem;
+			color: #635D58;
+			padding-left: 2rem;
+			li{
+	 			list-style-position: inside;
+	 			list-style-type: all; 
+	 		}
+		}
+	}
+
+}
+
+/* Inicio de utilización de flex en Comunidad*/
+
+.padreContenidoComunidadFlex{
+	display:  flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	margin: 1rem 2rem 2rem 2rem;
+}
+
+.hijoContenidoComunidadFlex{
+	padding: 1rem;
+	align-content: stretch;
+	margin: 1.5rem;
+	flex: 1; /*utilizo flex para unificaar flex-grow, shrink y basis*/
+	a{
+	font-size: 300;
+	text-decoration:  none;
+	font-weight: bold;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+	margin:  auto;
+	}
+	img{
+	display: block;
+	margin: auto;
+	}
+}
+
+.hijoContenidoComunidadFlex:hover {
+	padding: 1rem;
+	align-content: stretch;
+	margin: 1rem;
+	flex: 1; /*utilizo flex para unificaar flex-grow, shrink y basis*/
+	transform: scale(1.1);
+	background-color:#efcd86;
+}
+
+/* Fin de utilización de flex en Comunidad*/
+
+
+/*media query para boostrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	.container-fluid .row{
+		background-color: white;
+	}
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	.container-fluid .row{
+		background-color: #ccc;
+	}
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.container-fluid .row{
+		background-color: white;
+	}
+}

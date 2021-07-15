@@ -1,0 +1,45 @@
+$varWidth:50vh;
+
+@mixin sizeImag($tipoImagen){
+	@if $tipoImagen==mediana{
+			width:($varWidth)+5;
+	}@else if $tipoImagen==grande{
+		width:($varWidth)+25;
+	}@else if $tipoImagen==pequenia{
+		width:($varWidth)-5;
+	}@else{
+		width:$varWidth;
+	}
+}
+
+@mixin sizes($width,$height) {
+	width: $width;
+	height: $height;
+}
+
+$banner:(
+	Naranja: banner,
+	Celeste: banner3
+	);
+
+@each $pagina, $path in $banner{
+	.banner#{$pagina}{
+		text-align: center ;
+		font-weight: 400;
+		background-image: url('../media/#{$path}.jpeg');
+		height: 25rem;
+		background-size: cover;
+		vertical-align: center;
+		padding-top:0.5vh;
+		margin-top: 0.5vh;
+		padding-top: 15vh;
+		p{
+		font-weight: 400;
+		opacity:1;
+		font-size: 1.5rem;
+		animation-duration: 3s;
+		animation-name: foco;
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+@import "mixin";
+
+form{
+	margin: 4rem;
+	fieldset{
+	font-weight:100;
+	margin:5rem 1rem;
+	}
+}
+
+.camposInputs{
+	padding: 1rem;
+	margin: 3rem;
+	@include sizes(15rem,2rem);
+}
+
+.textArea{
+	@include sizes(50rem,15rem);
+}
+
+
+.volverFormulario{
+	height: 20rem;
+	a{
+	text-decoration: none;
+	margin-left: 10rem;
+	padding: 2rem;
+	}
+}
+
+
+.buttonForm{
+	border: none;
+	text-decoration: none;
+	background: linear-gradient(to top, #efcd86, white );
+	color: #49654C;
+	padding: 1rem;
+	margin-left: 25rem;
+	margin-top: 5rem;
+	border-radius: 1rem;
+	@include sizes(6rem,3rem);
+}
+
