@@ -45,10 +45,10 @@
 		<p>Dejanos tus datos para que podamos conocernos</p>
 	</div>
 
-	<div class="textoColumn"> <!-- inicio del formulario -->
+	<div class="textoColumn margen"> <!-- inicio del formulario -->
 		<form 	action="recibe.html" method="POST" enctype="multipart/form-data"> <!-- form-data es para cuando recibo archivos-->
 			<fieldset>
-				<legend>Datos personales</legend>
+				<legend class="subtitulos">Datos personales</legend>
 					<input class="camposInputs" type="text" name="Nombre" placeholder="Ingresa tu nombre"> <!--el name es para el nombre del combo, asi identifica a que campo corresponde la info-->
 					<input class="camposInputs" type="text" name="Apellido"  placeholder="Ingresa tu apellido">
 					
@@ -65,7 +65,7 @@
 					<input class="camposInputs" type="integer" name="edad"  placeholder="Ingresa tu edad">
 			</fieldset>
 			<fieldset>
-				<legend>¿Por qué nos contactas?</legend>
+				<legend class="subtitulos">¿Por qué nos contactas?</legend>
 				<div class="camposInputs">
 					<label for="op1" >Compartí tu experiencia en la comunidad</label> <!-- es para no usar un p cuando quiero ponerle titulo a un campo. Es mejor usar placeholder -->
 					<input type="radio" name="opciones" value="1" id="op1" > <!-- se usa cuando tengo 1 entre varias opciones-->
@@ -76,13 +76,13 @@
 				</div>	
 			</fieldset>
 			<fieldset>
-				<legend>Dejá tu mensaje aquí</legend>
+				<legend class="subtitulos">Dejá tu mensaje aquí</legend>
 					<div>
 						<textarea class="textArea" name="Mensaje"  placeholder="Ingresa tu mensaje"></textarea>
 					</div>
 			</fieldset>
 			<fieldset>
-				<legend>Enterate de nuestras últimas novedades</legend>
+				<legend class="subtitulos">Enterate de nuestras últimas novedades</legend>
 				<div>
 					<p>¿Desea recibir el Newsletter?
 					<input type="checkbox" name="Newsletter"></p>
@@ -97,17 +97,17 @@
 		<div class="container row mx-auto ">
             <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
                 <ul class="list-unstyled">
-                    <li><a class="text-dark siteFooter__linksFotter" href="https://www.instagram.com" target="_black">Instagram</a></li>
+                    <li><a class=" siteFooter__linksFotter" href="https://www.instagram.com" target="_black">Instagram</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
                 <ul class="list-unstyled">
-                    <li><a class="text-dark siteFooter__linksFotter" href="https://www.twitter.com" target="_black">Twitter</a></li>
+                    <li><a class=" siteFooter__linksFotter" href="https://www.twitter.com" target="_black">Twitter</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
                 <ul class="list-unstyled">
-                    <li><a class="text-dark siteFooter__linksFotter
+                    <li><a class=" siteFooter__linksFotter
 
                     	" href="https://www.Facebook.com" target="_black">Facebook</a></li>
                 </ul>

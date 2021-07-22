@@ -1,48 +1,29 @@
 /*contiene todo lo referido al banner, texto introducido en el banner y texto introductorio*/
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
 
-/*
-.carouselPersonal{ se suma para practica de BEM
-	background-color: #f7dfb6;
-	.carouselPersonal__imagenBorde{
-		border:solid;
-	}
-}*/
 
 $colorNarajaLetras: #e3bf62;
 
 .titulo{
 	color:#66921b;
 	 font-weight: 400;
+	 font-size:2rem;
 }
 
-.subtitulo{
+.subtitulos{
 	font-weight:400;
 	font-size:1.5rem;
-	color:#e3bf62;
+	color: #bf7a68;
 }
 
-/* se reemplaza en mixin
-.bannerInicio{
-	text-align: center ;
-	font-weight: 400;
-	
-	background-image: url(../media/banner.jpeg);
-	height: 25rem;
-	background-size: cover;
-	vertical-align: center;
-	padding-top:0.5vh;
-	margin-top: 0.5vh;
-	padding-top: 15vh;
-	grid-area: int;
-	p{
-	font-weight: 400;
-	opacity:1;
-	font-size: 1.5rem;
-	animation-duration: 3s;
-	animation-name: foco;
-	}
-}*/
 
 .introductoryText{
-	padding: 2rem;	
+	padding: 0rem 2rem 2rem 2rem;
+	p{
+		font-family: caveat;
+    	font-weight: 700;
+    	font-size:1.2rem;
+    	color:#926e68;
+    	color:#a8979a; /*gris*/
+	}	
 }

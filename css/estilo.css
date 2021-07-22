@@ -1,10 +1,19 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/banner.jpeg");
-  height: 25rem;
+  background-image: url("../media/bannerPie.jpeg");
+  height: 40rem;
   background-size: cover;
   vertical-align: center;
   padding-top: 0.5vh;
@@ -12,23 +21,22 @@
   padding-top: 15vh;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
 .bannerNaranja p {
-  font-weight: 400;
+  font-weight: 700;
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 4rem;
   animation-duration: 3s;
-  animation-name: foco;
+  animation-name: titilar;
+  font-family: Amatic SC;
+  color: #f8efe1;
+  margin-top: 4.8rem;
 }
 
 .bannerCeleste {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/banner3.jpeg");
-  height: 25rem;
+  background-image: url("../media/banner11.jpeg");
+  height: 40rem;
   background-size: cover;
   vertical-align: center;
   padding-top: 0.5vh;
@@ -37,11 +45,14 @@
 }
 
 .bannerCeleste p {
-  font-weight: 400;
+  font-weight: 700;
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 4rem;
   animation-duration: 3s;
-  animation-name: foco;
+  animation-name: titilar;
+  font-family: Amatic SC;
+  color: #f8efe1;
+  margin-top: 4.8rem;
 }
 
 .siteFooter {
@@ -51,7 +62,12 @@
 
 .siteFooter .siteFooter__linksFotter {
   text-decoration: none;
-  transition: 3s;
+  color: #353c17;
+}
+
+.siteFooter .siteFooter__linksFotter:hover {
+  color: white;
+  transform: scale(1.8);
 }
 
 /*
@@ -84,8 +100,8 @@ img .miLogo {
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/banner.jpeg");
-  height: 25rem;
+  background-image: url("../media/bannerPie.jpeg");
+  height: 40rem;
   background-size: cover;
   vertical-align: center;
   padding-top: 0.5vh;
@@ -94,18 +110,21 @@ img .miLogo {
 }
 
 .bannerNaranja p {
-  font-weight: 400;
+  font-weight: 700;
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 4rem;
   animation-duration: 3s;
-  animation-name: foco;
+  animation-name: titilar;
+  font-family: Amatic SC;
+  color: #f8efe1;
+  margin-top: 4.8rem;
 }
 
 .bannerCeleste {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/banner3.jpeg");
-  height: 25rem;
+  background-image: url("../media/banner11.jpeg");
+  height: 40rem;
   background-size: cover;
   vertical-align: center;
   padding-top: 0.5vh;
@@ -114,20 +133,14 @@ img .miLogo {
 }
 
 .bannerCeleste p {
-  font-weight: 400;
+  font-weight: 700;
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 4rem;
   animation-duration: 3s;
-  animation-name: foco;
-}
-
-form {
-  margin: 4rem;
-}
-
-form fieldset {
-  font-weight: 100;
-  margin: 5rem 1rem;
+  animation-name: titilar;
+  font-family: Amatic SC;
+  color: #f8efe1;
+  margin-top: 4.8rem;
 }
 
 .camposInputs {
@@ -165,53 +178,43 @@ form fieldset {
   height: 3rem;
 }
 
+legend {
+  margin-left: -1rem;
+}
+
 /*contiene todo lo referido al banner, texto introducido en el banner y texto introductorio*/
-/*
-.carouselPersonal{ se suma para practica de BEM
-	background-color: #f7dfb6;
-	.carouselPersonal__imagenBorde{
-		border:solid;
-	}
-}*/
 .titulo {
   color: #66921b;
   font-weight: 400;
+  font-size: 2rem;
 }
 
-.subtitulo {
+.subtitulos {
   font-weight: 400;
   font-size: 1.5rem;
-  color: #e3bf62;
+  color: #bf7a68;
 }
 
-/* se reemplaza en mixin
-.bannerInicio{
-	text-align: center ;
-	font-weight: 400;
-	
-	background-image: url(../media/banner.jpeg);
-	height: 25rem;
-	background-size: cover;
-	vertical-align: center;
-	padding-top:0.5vh;
-	margin-top: 0.5vh;
-	padding-top: 15vh;
-	grid-area: int;
-	p{
-	font-weight: 400;
-	opacity:1;
-	font-size: 1.5rem;
-	animation-duration: 3s;
-	animation-name: foco;
-	}
-}*/
 .introductoryText {
-  padding: 2rem;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.introductoryText p {
+  font-family: caveat;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #926e68;
+  color: #a8979a;
+  /*gris*/
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 /* Inicio flotar elemento */
@@ -239,7 +242,7 @@ p {
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 3px;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem 1rem 3rem 1rem;
 }
 
 a {
@@ -305,7 +308,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
   align-items: center;
   animation-name: titilar;
   animation-duration: 3s;
@@ -315,7 +318,8 @@ iframe {
   font-weight: 300;
   margin: 4rem;
   font-size: 1.5rem;
-  color: #e3bf62;
+  color: #bf7a68;
+  text-weight: bold;
 }
 
 .textoColumn .subtitulos .items {
@@ -369,7 +373,8 @@ iframe {
   flex: 1;
   /*utilizo flex para unificaar flex-grow, shrink y basis*/
   transform: scale(1.1);
-  background-color: #efcd86;
+  background-color: #ddd3cd;
+  border-radius: 2rem;
 }
 
 /* Fin de utilización de flex en Comunidad*/
@@ -393,4 +398,9 @@ iframe {
   .container-fluid .row {
     background-color: white;
   }
+}
+
+.margen {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }

@@ -1,12 +1,6 @@
 @import "mixin";
 
-form{
-	margin: 4rem;
-	fieldset{
-	font-weight:100;
-	margin:5rem 1rem;
-	}
-}
+
 
 .camposInputs{
 	padding: 1rem;
@@ -41,3 +35,6 @@ form{
 	@include sizes(6rem,3rem);
 }
 
+legend{
+	margin-left:-1rem;
+}

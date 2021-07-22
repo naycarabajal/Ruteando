@@ -4,9 +4,14 @@
 	margin-top: 2rem;
 	.siteFooter__linksFotter{
 	text-decoration: none;
-	transition: 3s;
+	color:#353c17;
+	}
+	.siteFooter__linksFotter:hover {
+	color:white;
+	transform: scale(1.8);
 	}
 }
+
 
 
 /*
