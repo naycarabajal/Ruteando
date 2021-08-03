@@ -2,15 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
 @import "mixin";
 @import "footer";
-@import "header";
+@import "media";
 @import "form";
 @import "introPage";
 
@@ -24,6 +18,30 @@ body{
 .card:hover {
   transform: scale(1.05);
 }
+
+.column{
+	align-items:center;
+	text-align:center;
+}
+
+.textoIntro{
+		font-size:1rem;
+		color: #565656;/*#FACD88;*/
+		text-align:center;
+		background-color:white;
+		align-items:center;
+}
+
+.seccionesIntro{
+	display:flex;
+	flex-wrap:wrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items:stretch;
+	text-align:center;
+
+}
+
 
 /* Inicio flotar elemento */
 
@@ -39,11 +57,27 @@ body{
 		.social{
 			width:48px;
 			position:fixed;
-			top:35rem;
-			left: 85rem;
+			top:38rem;
+			left: 88rem;
 		}
 
 /* Fin flotar elemento */
+
+.container{
+			width:75%;
+			max-width:100rem;
+			padding:1rem 2rem;
+			margin:auto;
+		}
+
+.hijoContenidoComunidadFlex p{
+	color: 	#404D49;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	word-spacing:3px;
+	margin: 1rem 1rem 1rem 1rem;
+	text-align:center;
+}
 
 p{
 	color: #404D49;
@@ -57,15 +91,20 @@ p{
 
 a{
 	color: #6E7175;
+	text-align:center;
 }
 
 a:hover {
 	color: black;
 	font-weight: bold;
+	text-decoration: none;
+
 }
 
 img{
-	width:100px
+	width:100px;
+	display:block;
+	margin: auto;
 }
 
 .fotoMedium{
@@ -161,11 +200,10 @@ iframe{
 	a{
 	font-size: 300;
 	text-decoration:  none;
-	font-weight: bold;
 	text-align: center;
 	overflow: hidden;
 	display: block;
-	margin:  auto;
+	margin:  1vh;
 	}
 	img{
 	display: block;
@@ -179,37 +217,12 @@ iframe{
 	margin: 1rem;
 	flex: 1; /*utilizo flex para unificaar flex-grow, shrink y basis*/
 	transform: scale(1.1);
-	background-color:#ddd3cd;
+	background-color:	#FFEFD5;/*#ddd3cd;*/
 	border-radius:2rem;
 }
 
 /* Fin de utilización de flex en Comunidad*/
 
-
-/*media query para boostrap*/
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-	.container-fluid .row{
-		background-color: white;
-	}
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-	.container-fluid .row{
-		background-color: #ccc;
-	}
-}
-
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-	.container-fluid .row{
-		background-color: white;
-	}
-}
 
 .margen{
 	margin-left: 5rem;

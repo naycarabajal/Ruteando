@@ -1,0 +1,147 @@
+.cuerpoCuadricula{
+	grid-area: txtCuerpo;
+}
+
+#nav {
+	grid-area:nav;
+}
+
+#banner {
+	grid-area:banner;
+}
+
+#introductorio {
+	grid-area: txtInt;
+}
+
+#footer {
+	grid-area:footer;
+}
+
+
+/* Inicio Mobile First Inicio*/
+@media only screen and (min-width: 576px) {
+    
+   .grillaPadreInicio{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
+	"nav "
+	"banner "
+	"txtInt"
+	"txtCuerpo"
+	" footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 40rem 12rem 125rem 20rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+}  
+}
+
+@media only screen and (min-width: 768px)  {
+    
+   .grillaPadreInicio{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+	"nav "
+	"banner  "
+	"txtInt "
+	"txtCuerpo "
+	" footer ";
+	grid-template-columns: 1fr;
+	grid-template-rows: 20rem 40rem 10rem 250rem 15rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+} 
+
+}
+
+@media only screen and (min-width: 1024px) {
+.grillaPadreInicio{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
+	"nav "
+	"banner "
+	"txtInt "
+	"txtCuerpo "
+	" footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 40rem 10rem 120rem 15rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+}
+}
+/* Fin Mobile First Inicio*/
+
+
+/* Inicio Mobile First grillaPadreSinContenedor*/
+
+@media only screen and (min-width: 576px) {
+    
+   .grillaPadreSinContenedor{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
+	"nav "
+	"banner "
+	"txtInt"
+	"txtCuerpo"
+	" footer";
+	grid-template-columns: 2fr;
+	grid-template-rows: 80rem 20rem 10rem 60rem 10rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+}  
+}
+
+
+
+@media only screen and (min-width: 768px)  {
+    
+   .grillaPadreSinContenedor{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
+	"nav nav"
+	"banner banner"
+	"txtInt txtInt"
+	"txtCuerpo txtCuerpo"
+	" footer footer";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80rem 20rem 10rem 40rem 10rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+} 
+}
+
+@media only screen and (min-width: 1024px) {
+.grillaPadreSinContenedor{
+	height: 100vh;
+	display: grid;
+	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
+	"nav nav nav nav"
+	"banner banner banner banner"
+	"txtInt txtInt txtInt txtInt"
+	"txtCuerpo txtCuerpo txtCuerpo txtCuerpo"
+	"footer footer footer footer";
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 8rem 40rem 5rem 85rem 10rem;
+	/*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+	justify-items:stretch;
+	/*align-content: end;*/
+}
+}
+/* Fin Mobile First grillaPadreSinContenedor*/

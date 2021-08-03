@@ -2,28 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/bannerPie.jpeg");
+  background-image: url("../media/bannerFinal.jpeg");
   height: 40rem;
   background-size: cover;
   vertical-align: center;
-  padding-top: 0.5vh;
-  margin-top: 0.5vh;
-  padding-top: 15vh;
 }
 
 .bannerNaranja p {
   font-weight: 700;
   opacity: 1;
+  padding-top: 15vh;
   font-size: 4rem;
   animation-duration: 3s;
   animation-name: titilar;
@@ -39,14 +33,12 @@
   height: 40rem;
   background-size: cover;
   vertical-align: center;
-  padding-top: 0.5vh;
-  margin-top: 0.5vh;
-  padding-top: 15vh;
 }
 
 .bannerCeleste p {
   font-weight: 700;
   opacity: 1;
+  padding-top: 15vh;
   font-size: 4rem;
   animation-duration: 3s;
   animation-name: titilar;
@@ -88,30 +80,127 @@
 	transition: 3s;
 	}
 }*/
-img .miLogo {
-  margin-right: 50px;
-  display: block;
+.cuerpoCuadricula {
+  grid-area: txtCuerpo;
 }
 
-.bg-bodyHome {
-  background-color: #fefefe;
+#nav {
+  grid-area: nav;
 }
 
+#banner {
+  grid-area: banner;
+}
+
+#introductorio {
+  grid-area: txtInt;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/* Inicio Mobile First Inicio*/
+@media only screen and (min-width: 576px) {
+  .grillaPadreInicio {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav " "banner " "txtInt" "txtCuerpo" " footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem 40rem 12rem 125rem 20rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grillaPadreInicio {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav " "banner  " "txtInt " "txtCuerpo " " footer ";
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 40rem 10rem 250rem 15rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grillaPadreInicio {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav " "banner " "txtInt " "txtCuerpo " " footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem 40rem 10rem 120rem 15rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+/* Fin Mobile First Inicio*/
+/* Inicio Mobile First grillaPadreSinContenedor*/
+@media only screen and (min-width: 576px) {
+  .grillaPadreSinContenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav " "banner " "txtInt" "txtCuerpo" " footer";
+    grid-template-columns: 2fr;
+    grid-template-rows: 80rem 20rem 10rem 60rem 10rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .grillaPadreSinContenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav" "banner banner" "txtInt txtInt" "txtCuerpo txtCuerpo" " footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80rem 20rem 10rem 40rem 10rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grillaPadreSinContenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav nav nav" "banner banner banner banner" "txtInt txtInt txtInt txtInt" "txtCuerpo txtCuerpo txtCuerpo txtCuerpo" "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 8rem 40rem 5rem 85rem 10rem;
+    /*grid-column-gap: 10px;
+	grid-row-gap: 10px;*/
+    justify-items: stretch;
+    /*align-content: end;*/
+  }
+}
+
+/* Fin Mobile First grillaPadreSinContenedor*/
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
-  background-image: url("../media/bannerPie.jpeg");
+  background-image: url("../media/bannerFinal.jpeg");
   height: 40rem;
   background-size: cover;
   vertical-align: center;
-  padding-top: 0.5vh;
-  margin-top: 0.5vh;
-  padding-top: 15vh;
 }
 
 .bannerNaranja p {
   font-weight: 700;
   opacity: 1;
+  padding-top: 15vh;
   font-size: 4rem;
   animation-duration: 3s;
   animation-name: titilar;
@@ -127,14 +216,12 @@ img .miLogo {
   height: 40rem;
   background-size: cover;
   vertical-align: center;
-  padding-top: 0.5vh;
-  margin-top: 0.5vh;
-  padding-top: 15vh;
 }
 
 .bannerCeleste p {
   font-weight: 700;
   opacity: 1;
+  padding-top: 15vh;
   font-size: 4rem;
   animation-duration: 3s;
   animation-name: titilar;
@@ -190,22 +277,34 @@ legend {
 }
 
 .subtitulos {
+  margin: 4rem;
   font-weight: 400;
   font-size: 1.5rem;
   color: #bf7a68;
+  text-align: center;
 }
 
 .introductoryText {
   padding: 0rem 2rem 2rem 2rem;
+  grid-area: txtInt;
 }
 
 .introductoryText p {
   font-family: caveat;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #926e68;
   color: #a8979a;
   /*gris*/
+}
+
+img .miLogo {
+  margin-right: 50px;
+  display: block;
+}
+
+.bg-bodyHome {
+  background-color: #fefefe;
 }
 
 body {
@@ -215,6 +314,29 @@ body {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+.column {
+  align-items: center;
+  text-align: center;
+}
+
+.textoIntro {
+  font-size: 1rem;
+  color: #565656;
+  /*#FACD88;*/
+  text-align: center;
+  background-color: white;
+  align-items: center;
+}
+
+.seccionesIntro {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: stretch;
+  text-align: center;
 }
 
 /* Inicio flotar elemento */
@@ -232,11 +354,27 @@ body {
 .social {
   width: 48px;
   position: fixed;
-  top: 35rem;
-  left: 85rem;
+  top: 38rem;
+  left: 88rem;
 }
 
 /* Fin flotar elemento */
+.container {
+  width: 75%;
+  max-width: 100rem;
+  padding: 1rem 2rem;
+  margin: auto;
+}
+
+.hijoContenidoComunidadFlex p {
+  color: #404D49;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
 p {
   color: #404D49;
   line-height: 1.5;
@@ -247,27 +385,34 @@ p {
 
 a {
   color: #6E7175;
+  text-align: center;
 }
 
 a:hover {
   color: black;
   font-weight: bold;
+  text-decoration: none;
 }
 
 img {
   width: 100px;
+  display: block;
+  margin: auto;
 }
 
 .fotoMedium {
-  width: 55vh;
+  width: 25vw;
+  border-radius: 1rem;
 }
 
 .fotoPequenia {
-  width: 45vh;
+  width: 20vw;
+  border-radius: 1rem;
 }
 
 .fotoGrande {
-  width: 75vh;
+  width: 30vw;
+  border-radius: 1rem;
 }
 
 ul li {
@@ -354,11 +499,10 @@ iframe {
 .hijoContenidoComunidadFlex a {
   font-size: 300;
   text-decoration: none;
-  font-weight: bold;
   text-align: center;
   overflow: hidden;
   display: block;
-  margin: auto;
+  margin: 1vh;
 }
 
 .hijoContenidoComunidadFlex img {
@@ -373,33 +517,12 @@ iframe {
   flex: 1;
   /*utilizo flex para unificaar flex-grow, shrink y basis*/
   transform: scale(1.1);
-  background-color: #ddd3cd;
+  background-color: #FFEFD5;
+  /*#ddd3cd;*/
   border-radius: 2rem;
 }
 
 /* Fin de utilización de flex en Comunidad*/
-/*media query para boostrap*/
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-  .container-fluid .row {
-    background-color: white;
-  }
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-  .container-fluid .row {
-    background-color: #ccc;
-  }
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .container-fluid .row {
-    background-color: white;
-  }
-}
-
 .margen {
   margin-left: 5rem;
   margin-right: 5rem;
