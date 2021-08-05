@@ -30,6 +30,7 @@ body{
 		text-align:center;
 		background-color:white;
 		align-items:center;
+		margin-top: 2rem;
 }
 
 .seccionesIntro{
@@ -87,7 +88,31 @@ p{
 	margin: 1rem 1rem 3rem 1rem;
 }
 
+.fotoDinamica{
+	filter: sepia(15%);
+}
 
+.fotoBorde{
+	border-style:none;
+}
+
+.fotoBorde:hover {
+	border-style: solid;
+	color:#a6a6a6;
+}
+
+.fotoDinamica:hover {
+		filter: sepia(0%);
+		transform:scale(1.1);
+}
+
+.fotoGiratoria{
+		background-color:red;
+}
+
+.fotoGiratoria:hover {
+	transform:rotateY(180deg);
+}
 
 a{
 	color: #6E7175;
@@ -167,17 +192,8 @@ iframe{
 		margin: 4rem;
 		font-size:1.5rem;
 		color:#bf7a68;
+		//background-color:#a6a6a6;
 		text-weight: bold;
-		.items{
-			margin: 2rem;
-			font-size:1rem;
-			color: #635D58;
-			padding-left: 2rem;
-			li{
-	 			list-style-position: inside;
-	 			list-style-type: all; 
-	 		}
-		}
 	}
 
 }
@@ -227,4 +243,8 @@ iframe{
 .margen{
 	margin-left: 5rem;
 	margin-right: 5rem;
+}
+
+.margenMin{
+	margin:2rem;
 }

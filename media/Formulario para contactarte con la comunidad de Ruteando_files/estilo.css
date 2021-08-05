@@ -5,10 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap");
-#socialMedia {
-  width: 2.5rem;
-}
-
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
@@ -52,7 +48,8 @@
 }
 
 .siteFooter {
-  background: linear-gradient(to top, #be988e, #fffafa);
+  background-image: url(../media/bannerPie.jpeg);
+  margin-top: 2rem;
 }
 
 .siteFooter .siteFooter__linksFotter {
@@ -61,17 +58,8 @@
 }
 
 .siteFooter .siteFooter__linksFotter:hover {
-  color: #353c17;
+  color: white;
   transform: scale(1.8);
-}
-
-#textFotter {
-  font-size: 0.7rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 2.5rem;
-  margin-bottom: -2rem;
 }
 
 /*
@@ -191,7 +179,7 @@
     display: grid;
     grid-template-areas: "nav " "banner " "txtInt " "txtCuerpo " " footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 40rem 10rem 100rem 20rem;
+    grid-template-rows: 8rem 40rem 10rem 100rem 12rem;
     /*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
     justify-items: stretch;
@@ -200,10 +188,6 @@
 }
 
 /* Fin Mobile First Min*/
-#socialMedia {
-  width: 2.5rem;
-}
-
 .bannerNaranja {
   text-align: center;
   font-weight: 400;
@@ -253,13 +237,6 @@
   height: 2rem;
 }
 
-.formOrganizacion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .textArea {
   width: 60vh;
   height: 30vh;
@@ -276,29 +253,16 @@
 }
 
 .buttonForm {
-  border: ridge;
-  text-decoration: none;
-  background: linear-gradient(to top, #ddd3c3, white);
-  color: black;
-  margin: 5rem;
-  border-radius: 1rem;
-  width: 6rem;
-  height: 3rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-.buttonForm:hover {
   border: none;
   text-decoration: none;
-  background: linear-gradient(to top, #ddd3c3, #bf7a68);
-  color: #4a5658;
-  margin: 5rem;
+  background: linear-gradient(to top, #efcd86, white);
+  color: #49654C;
+  padding: 1rem;
+  margin-left: 25rem;
+  margin-top: 5rem;
   border-radius: 1rem;
   width: 6rem;
   height: 3rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
 }
 
 legend {

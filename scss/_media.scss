@@ -19,10 +19,10 @@
 }
 
 
-/* Inicio Mobile First Inicio*/
+/* Inicio Mobile First Max*/
 @media only screen and (min-width: 576px) {
     
-   .grillaPadreInicio{
+   .grillaPadreMax{
 	height: 100vh;
 	display: grid;
 	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
@@ -42,7 +42,7 @@
 
 @media only screen and (min-width: 768px)  {
     
-   .grillaPadreInicio{
+   .grillaPadreMax{
 	height: 100vh;
 	display: grid;
 	grid-template-areas:
@@ -52,7 +52,7 @@
 	"txtCuerpo "
 	" footer ";
 	grid-template-columns: 1fr;
-	grid-template-rows: 20rem 40rem 10rem 250rem 15rem;
+	grid-template-rows: 8rem 40rem 12rem 140rem 15rem;
 	/*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
 	justify-items:stretch;
@@ -62,7 +62,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-.grillaPadreInicio{
+.grillaPadreMax{
 	height: 100vh;
 	display: grid;
 	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
@@ -72,21 +72,20 @@
 	"txtCuerpo "
 	" footer";
 	grid-template-columns: 1fr;
-	grid-template-rows: 8rem 40rem 10rem 120rem 15rem;
+	grid-template-rows: 8rem 40rem 10rem 120rem 12rem;
 	/*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
 	justify-items:stretch;
 	/*align-content: end;*/
 }
 }
-/* Fin Mobile First Inicio*/
+/* Fin Mobile First Max*/
 
 
-/* Inicio Mobile First grillaPadreSinContenedor*/
-
+/* Inicio Mobile First Min*/
 @media only screen and (min-width: 576px) {
     
-   .grillaPadreSinContenedor{
+   .grillaPadreMin{
 	height: 100vh;
 	display: grid;
 	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
@@ -95,8 +94,8 @@
 	"txtInt"
 	"txtCuerpo"
 	" footer";
-	grid-template-columns: 2fr;
-	grid-template-rows: 80rem 20rem 10rem 60rem 10rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 40rem 12rem 125rem 20rem;
 	/*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
 	justify-items:stretch;
@@ -104,44 +103,43 @@
 }  
 }
 
-
-
 @media only screen and (min-width: 768px)  {
     
-   .grillaPadreSinContenedor{
+   .grillaPadreMin{
 	height: 100vh;
 	display: grid;
-	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
-	"nav nav"
-	"banner banner"
-	"txtInt txtInt"
-	"txtCuerpo txtCuerpo"
-	" footer footer";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 80rem 20rem 10rem 40rem 10rem;
+	grid-template-areas:
+	"nav "
+	"banner  "
+	"txtInt "
+	"txtCuerpo "
+	" footer ";
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 40rem 12rem 100rem 15rem;
 	/*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
 	justify-items:stretch;
 	/*align-content: end;*/
 } 
+
 }
 
 @media only screen and (min-width: 1024px) {
-.grillaPadreSinContenedor{
+.grillaPadreMin{
 	height: 100vh;
 	display: grid;
 	grid-template-areas:  /*EN EL INSPECTOR PONGO GRID Y ME MARCA LA LINEAAS PUNTEADAS*/
-	"nav nav nav nav"
-	"banner banner banner banner"
-	"txtInt txtInt txtInt txtInt"
-	"txtCuerpo txtCuerpo txtCuerpo txtCuerpo"
-	"footer footer footer footer";
-	grid-template-columns: 1fr 2fr 2fr 1fr;
-	grid-template-rows: 8rem 40rem 5rem 85rem 10rem;
+	"nav "
+	"banner "
+	"txtInt "
+	"txtCuerpo "
+	" footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 8rem 40rem 10rem 100rem 20rem;
 	/*grid-column-gap: 10px;
 	grid-row-gap: 10px;*/
 	justify-items:stretch;
 	/*align-content: end;*/
 }
 }
-/* Fin Mobile First grillaPadreSinContenedor*/
+/* Fin Mobile First Min*/

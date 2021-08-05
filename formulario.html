@@ -14,115 +14,121 @@
    <meta name="keywords"  content="COMUNIDAD, VIAJEROS, MUNDO, VIAJES, MOTORHOME, VANS, CAMPERS, RUTAS">
   </head>
 <body>
-	<div class="container-fluid px-0">
-		<div class="conteiner">
-			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top"> <!---->
-			  	<a class="navbar-brand miLogo" href="#"><img src="media/logo.png"/></a>
-			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			   	 	<span class="navbar-toggler-icon"></span>
-			  	</button>
-			  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
-				      <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
-				      <a class="nav-link colorBotones" href="nuestraexperiencia.html">NUESTRA EXPERIENCIA</a>
-				      <a class="nav-link" href="camperizaya.html">CAMPERIZA YA</a>
-				      <a class="nav-link" href="mejoresdestinos.html">MEJORES DESTINO</a>
-				      <a class="nav-link" href="comunidad.html">COMUNIDAD</a>
-				      <a class="nav-link" href="#">CONTÁCTENOS</a>
-				    </div>
-			  	</div>
-			</nav>
+	<div class="grillaPadreMin">
+		<div class="container-fluid px-0" id="nav">
+			<div class="conteiner">
+				<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top"> <!---->
+				  	<a class="navbar-brand miLogo" href="#"><img src="media/logo.png"/></a>
+				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				   	 	<span class="navbar-toggler-icon"></span>
+				  	</button>
+				  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					    <div class="navbar-nav">
+					      <a class="nav-link active" href="index.html">HOME <span class="sr-only">(current)</span></a>
+					      <a class="nav-link colorBotones" href="nuestraexperiencia.html">NUESTRA EXPERIENCIA</a>
+					      <a class="nav-link" href="camperizaya.html">CAMPERIZA YA</a>
+					      <a class="nav-link" href="mejoresdestinos.html">MEJORES DESTINO</a>
+					      <a class="nav-link" href="comunidad.html">COMUNIDAD</a>
+					      <a class="nav-link" href="#">CONTÁCTENOS</a>
+					    </div>
+				  	</div>
+				</nav>
+			</div>
+		</div> <!-- Fin del menú-->
+
+		<div class="bannerCeleste"  id="banner"> <!-- Introducción de ´pagina-->
+			<H1>
+				<p>¡Contactate con nosotros!</p>
+			</H1>
 		</div>
-	</div> <!-- Fin del menú-->
 
-	<div class="bannerCeleste" > <!-- Introducción de ´pagina-->
-				<H1>
-					<p>¡Contactate con nosotros!</p>
-				</H1>
+		<div class="text-center py-4 introductoryText" id="introductorio"> <!--Inicio texto introductorio-->
+			<p>Dejanos tus datos para que podamos conocernos</p>
 		</div>
 
-	<div class="text-center py-4 introductoryText"> <!--Inicio texto introductorio-->
-		<p>Dejanos tus datos para que podamos conocernos</p>
-	</div>
-
-	<div class="textoColumn margen"> <!-- inicio del formulario -->
-		<form 	action="recibe.html" method="POST" enctype="multipart/form-data"> <!-- form-data es para cuando recibo archivos-->
-			<fieldset>
-				<legend class="subtitulos">Datos personales</legend>
-					<input class="camposInputs" type="text" name="Nombre" placeholder="Ingresa tu nombre"> <!--el name es para el nombre del combo, asi identifica a que campo corresponde la info-->
-					<input class="camposInputs" type="text" name="Apellido"  placeholder="Ingresa tu apellido">
-					
-					<input class="camposInputs" type="tel" name="Telefono"  placeholder="Ingresa tu número de teléfono">
-					
-					<input class="camposInputs" type="Email" name="Mail"  placeholder="Ingresa tu mail">
-					
-					<input class="camposInputs" type="text" name="pais"  placeholder="Ingresa tu país">
-					
-					<input class="camposInputs" type="localidad" name="localidad"  placeholder="Ingresa tu localidad">
-					
-					<input class="camposInputs" type="text" name="redsocial"  placeholder="Ingresa tu red social">
-					
-					<input class="camposInputs" type="integer" name="edad"  placeholder="Ingresa tu edad">
-			</fieldset>
-			<fieldset>
-				<legend class="subtitulos">¿Por qué nos contactas?</legend>
-				<div class="camposInputs">
-					<label for="op1" >Compartí tu experiencia en la comunidad</label> <!-- es para no usar un p cuando quiero ponerle titulo a un campo. Es mejor usar placeholder -->
-					<input type="radio" name="opciones" value="1" id="op1" > <!-- se usa cuando tengo 1 entre varias opciones-->
+		<div id="cuerpoCuadricula"	> <!-- inicio del formulario -->
+			<form 	action="recibe.html" method="POST" enctype="multipart/form-data"> <!-- form-data es para cuando recibo archivos-->
+				<p class="subtitulos">Datos personales</p>
+				<div  class="formOrganizacion">
+						<input class="camposInputs form-control" type="text" name="Nombre" placeholder="Ingresa tu nombre"> <!--el name es para el nombre del combo, asi identifica a que campo corresponde la info-->
+						<input class="camposInputs form-control" type="text" name="Apellido"  placeholder="Ingresa tu apellido">
+						
+						<input class="camposInputs form-control" type="tel" name="Telefono"  placeholder="Ingresa tu número de teléfono">
+						
+						<input class="camposInputs form-control" type="Email" name="Mail"  placeholder="Ingresa tu mail">
+						
+						<input class="camposInputs form-control" type="text" name="pais"  placeholder="Ingresa tu país">
+						
+						<input class="camposInputs form-control" type="localidad" name="localidad"  placeholder="Ingresa tu localidad">
+						
+						<input class="camposInputs form-control" type="text" name="redsocial"  placeholder="Ingresa tu red social">
+						
+						<input class="camposInputs form-control" type="integer" name="edad"  placeholder="Ingresa tu edad">
 				</div>
-				<div class="camposInputs">	
-					<label for="op2">Consultas y sugerencias</label>
-					<input type="radio" name="opciones" value="2" id="op2">
-				</div>	
-			</fieldset>
-			<fieldset>
-				<legend class="subtitulos">Dejá tu mensaje aquí</legend>
-					<div>
-						<textarea class="textArea" name="Mensaje"  placeholder="Ingresa tu mensaje"></textarea>
+				<p class="subtitulos">¿Por qué nos contactas?</p>
+				<div class="row formOrganizacion">
+					<div class="camposInputs row">
+						<label for="op1" class="d-block">Compartí tu experiencia en la comunidad</label> <!-- es para no usar un p cuando quiero ponerle titulo a un campo. Es mejor usar placeholder -->
+						<input type="radio" class="m-2" name="opciones" value="1" id="op1" > <!-- se usa cuando tengo 1 entre varias opciones-->
 					</div>
-			</fieldset>
-			<fieldset>
-				<legend class="subtitulos">Enterate de nuestras últimas novedades</legend>
-				<div>
-					<p>¿Desea recibir el Newsletter?
-					<input type="checkbox" name="Newsletter"></p>
+					<div class="camposInputs row">	
+						<label for="op2">Consultas y sugerencias sobre nuestra página</label>
+						<input type="radio" class="m-2" name="opciones" value="2" id="op2">
+					</div>	
 				</div>
-			</fieldset>
-			<input type="submit" name="Enviar" value="Enviar" class="buttonForm">  <!--submit, button (se usa en Javascript), -->
-			<input type="reset" value="Limpiar" class="buttonForm">
-		</form>
-	</div>
-	
-	<div class=" py-3 siteFooter"> <!--Inicio Footer-->
-		<div class="container row mx-auto ">
-            <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
-                <ul class="list-unstyled">
-                    <li><a class=" siteFooter__linksFotter" href="https://www.instagram.com" target="_black">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
-                <ul class="list-unstyled">
-                    <li><a class=" siteFooter__linksFotter" href="https://www.twitter.com" target="_black">Twitter</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 text-center">
-                <ul class="list-unstyled">
-                    <li><a class=" siteFooter__linksFotter
-
-                    	" href="https://www.Facebook.com" target="_black">Facebook</a></li>
-                </ul>
-            </div>
-        </div>
-	</div> <!--Fin Footer-->
-	<!-- flotar el icono de WhatsApp -->
-	<div class="conteiner">
-	</div>
+				<p class="subtitulos">Dejá tu mensaje aquí</p>
+				<div class="row formOrganizacion">
+						<div>
+							<textarea class="textArea " rows="2" name="Mensaje"  placeholder="Ingresa tu mensaje"></textarea>
+						</div>
+				</div>
+				<p class="subtitulos">Enterate de nuestras últimas novedades</p>
+				<div class="row formOrganizacion">
+					<div>
+						<p>¿Desea recibir el Newsletter?
+						<input type="checkbox" name="Newsletter"></p>
+					</div>
+				</div>
+				<div class="row formOrganizacion">
+					<input type="submit" name="Enviar" value="Enviar" class="buttonForm">  <!--submit, button (se usa en Javascript), -->
+					<input type="reset" value="Limpiar" class="buttonForm">
+				</div>
+			</form>
+		</div>
+		
+		<div class=" py-3 siteFooter" id="footer"> <!--Inicio Footer-->
+			<div class="container row mx-auto ">
+	            <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0 text-center">
+	                <ul class="list-unstyled">
+	                    <li><a class="siteFooter__linksFotter" href="https://www.instagram.com" target="_black"><img src="media/redes/instagram.svg" id="socialMedia" alt="Instagram">Instagram</a></li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0 text-center">
+	                <ul class="list-unstyled">
+	                    <li><a class="siteFooter__linksFotter" href="https://www.twitter.com" target="_black"><img src="media/redes/twitter.svg" id="socialMedia" alt="Twitter">Twitter</a></li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-6 col-lg-3 mb-2 mb-md-0 text-center">
+	                <ul class="list-unstyled">
+	                    <li><a class=" siteFooter__linksFotter" href="https://www.Facebook.com" target="_black"><img src="media/redes/facebook.svg" id="socialMedia" alt="Facebook">Facebook</a></li>
+	                </ul>
+	            </div>
+	             <div class="col-12 col-md-3 col-lg-3 mb-2 mb-md-0 text-center">
+	                <ul class="list-unstyled">
+	                    <li><a class=" siteFooter__linksFotter" href="https://www.youtube.com" target="_black"><img src="media/redes/youtube.svg" id="socialMedia" alt="Youtube">Youtube</a></li>
+	                </ul>
+	            </div>
+	            <p id="textFotter" class="col-12">© 2020 ruteando Todos los derechos reservados.</p>
+	        </div>
+		</div> <!--Fin Footer-->
+		<!-- flotar el icono de WhatsApp -->
+		<div class="conteiner"></div>
 		<div class="social">
 			<a href="#"><img src="media/wplogo.png" alt="WhatsApp"></a> 
 		</div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	</div>
 </body>
 </html>

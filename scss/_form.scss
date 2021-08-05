@@ -8,8 +8,15 @@
 	@include sizes(15rem,2rem);
 }
 
+.formOrganizacion{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .textArea{
-	@include sizes(50rem,15rem);
+	@include sizes(60vh,30vh);
 }
 
 
@@ -24,17 +31,31 @@
 
 
 .buttonForm{
-	border: none;
+	border: ridge;
 	text-decoration: none;
-	background: linear-gradient(to top, #efcd86, white );
-	color: #49654C;
-	padding: 1rem;
-	margin-left: 25rem;
-	margin-top: 5rem;
+	background: linear-gradient(to top, #ddd3c3, white );
+	color: black;
+	margin: 5rem;
 	border-radius: 1rem;
 	@include sizes(6rem,3rem);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
+.buttonForm:hover {
+	border: none;
+	text-decoration: none;
+	background: linear-gradient(to top,#ddd3c3, #bf7a68 );
+	color: #4a5658;
+	margin: 5rem;
+	border-radius: 1rem;
+	@include sizes(6rem,3rem);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+
+
 legend{
-	margin-left:-1rem;
+	margin-left:1rem;
 }

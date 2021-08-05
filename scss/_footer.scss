@@ -1,17 +1,25 @@
 
 .siteFooter{
-	background-image: url(../media/bannerPie.jpeg);
-	margin-top: 2rem;
+	//background-image: url(../media/bannerPie.jpeg);
+	background: linear-gradient(to top, #be988e,#fffafa);
 	.siteFooter__linksFotter{
 	text-decoration: none;
 	color:#353c17;
 	}
 	.siteFooter__linksFotter:hover {
-	color:white;
+	color:#353c17;
 	transform: scale(1.8);
 	}
 }
 
+#textFotter{
+	font-size:0.7rem;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	margin-top:2.5rem;
+	margin-bottom: -2rem;
+}
 
 
 /*

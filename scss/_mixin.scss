@@ -18,6 +18,10 @@ $varWidth:20vw;
 	}
 }
 
+#socialMedia{
+	width:2.5rem;
+}
+
 @mixin sizes($width,$height) {
 	width: $width;
 	height: $height;
