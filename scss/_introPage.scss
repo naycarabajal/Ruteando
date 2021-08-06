@@ -36,15 +36,15 @@ $colorNarajaLetras: #e3bf62;
 		font-family: caveat;
     	font-weight: 700;
     	font-size:1.3rem;
-    	color:#926e68;
-    	color:#a8979a; /*gris*/
+    	color:#a8979a;
 	}	
 }
 
 
-img .miLogo{
+.miLogo{
 	margin-right: 50px;
 	display: block;
+	margin:inherit;
 }
 
 .bg-bodyHome{

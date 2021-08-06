@@ -29,14 +29,14 @@ $varWidth:20vw;
 
 $banner:(
 	Naranja: bannerFinal,
-	Celeste: banner11
+	Celeste: bannerFinal2
 	);
 
 @each $pagina, $path in $banner{
 	.banner#{$pagina}{
 		text-align: center ;
 		font-weight: 400;
-		background-image: url('../media/#{$path}.jpeg');
+		background-image: url('../media/banner/#{$path}.jpeg');
 		height: 40rem;	
 		background-size: cover;
 		vertical-align: center;
