@@ -8,6 +8,10 @@
 	@include sizes(15rem,2rem);
 }
 
+.camposInputs:hover{
+	border-color:  #bf7a68;
+}
+
 .formOrganizacion{
 	display: flex;
 	flex-direction: row;
@@ -28,7 +32,6 @@
 	padding: 2rem;
 	}
 }
-
 
 .buttonForm{
 	border: ridge;

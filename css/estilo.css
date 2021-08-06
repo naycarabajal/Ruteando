@@ -235,6 +235,10 @@
   height: 2rem;
 }
 
+.camposInputs:hover {
+  border-color: #bf7a68;
+}
+
 .formOrganizacion {
   display: flex;
   flex-direction: row;
