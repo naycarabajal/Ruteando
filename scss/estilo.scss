@@ -17,6 +17,11 @@ body{
 
 /* Inicio flotar elemento */
 
+:root{
+	font-size:1rem;
+	padding:0.5rem;
+}
+
 *{box-sizing:border-box;}
 
 		.container{
@@ -215,10 +220,10 @@ iframe{
 }
 
 .hijoContenidoComunidadFlex{
-	padding: 1rem;
+	padding: 0.5rem 0rem;
 	align-content: stretch;
-	margin: 1.5rem;
-	flex: 1; /*utilizo flex para unificaar flex-grow, shrink y basis*/
+	margin: 0.5rem;
+	/*flex: 1; utilizo flex para unificaar flex-grow, shrink y basis*/
 	a{
 	font-size: 300;
 	text-decoration:  none;
@@ -234,10 +239,10 @@ iframe{
 }
 
 .hijoContenidoComunidadFlex:hover {
-	padding: 1rem;
+	padding: 0.5rem 0rem;
 	align-content: stretch;
-	margin: 1rem;
-	flex: 1; /*utilizo flex para unificaar flex-grow, shrink y basis*/
+	margin: 0.5rem;
+	/*flex: 1; utilizo flex para unificaar flex-grow, shrink y basis*/
 	transform: scale(1.1);
 	background-color:	#FFEFD5;/*#ddd3cd;*/
 	border-radius:2rem;
